@@ -30,6 +30,33 @@
       "employeeNumber": "D-1231",
       "notes": "KA",
       "id": 5
+    },
+    {
+      "firstName": "Thomas",
+      "lastName": "Schmitt",
+      "age": "45",
+      "hireDate": "2014-03-12",
+      "employeeNumber": "D-2312",
+      "notes": "Er ist bisschen komisch",
+      "id": 6
+    },
+    {
+      "firstName": "Tip",
+      "lastName": "Mip",
+      "age": "12",
+      "hireDate": "2023-11-01",
+      "employeeNumber": "D-2312",
+      "notes": "dasd",
+      "id": 7
+    },
+    {
+      "firstName": "oasd",
+      "lastName": "asdas",
+      "age": "12",
+      "hireDate": "2023-11-08",
+      "employeeNumber": "D-1231",
+      "notes": "dasdasd",
+      "id": 8
     }
   ]
 }
