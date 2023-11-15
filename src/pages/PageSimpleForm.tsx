@@ -23,7 +23,7 @@ export const PageSimpleForm = () => {
 			);
 
 			if (response.status === 201) {
-				navigate("/info");
+				navigate("/employees");
 			} else {
 				console.log(`ERROR: ${response.status}`);
 			}
