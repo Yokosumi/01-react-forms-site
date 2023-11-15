@@ -1,11 +1,37 @@
 import { FormEvent } from "react";
+import axios, { AxiosResponse } from "axios";
+import { useNavigate } from "react-router-dom";
 
 export const PageSimpleForm = () => {
-	const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
+	const navigate = useNavigate();
+
+	const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
-		const data = new FormData(event.target as HTMLFormElement);
-		console.log(data);
+		const formData = new FormData(event.target as HTMLFormElement);
+		const employee = Object.fromEntries(formData);
+		const headers = {
+			"Access-Control-Allow-Origin": "*",
+			"Content-Type": "application/json",
+		};
+		try {
+			const response = await axios.post(
+				"http://localhost:8005/employees",
+				employee,
+				{
+					headers,
+				}
+			);
+
+			if (response.status === 201) {
+				navigate("/info");
+			} else {
+				console.log(`ERROR: ${response.status}`);
+			}
+		} catch (error: any) {
+			console.error(error);
+		}
 	};
+
 	return (
 		<>
 			<form onSubmit={handleFormSubmit}>

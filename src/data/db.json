@@ -1,8 +1,35 @@
 {
-  "employee": [
+  "employees": [
     {
       "newEmployee": "Test4444",
       "id": 1
+    },
+    {
+      "firstName": "Hans",
+      "lastName": "Franz",
+      "age": "19",
+      "hireDate": "2023-11-02",
+      "employeeNumber": "D-1231",
+      "notes": "KA",
+      "id": 2
+    },
+    {
+      "firstName": "Hansi",
+      "lastName": "Franz",
+      "age": "19",
+      "hireDate": "2023-11-02",
+      "employeeNumber": "D-1231",
+      "notes": "KA",
+      "id": 4
+    },
+    {
+      "firstName": "Hansi",
+      "lastName": "Franz",
+      "age": "19",
+      "hireDate": "2023-11-02",
+      "employeeNumber": "D-1231",
+      "notes": "KA",
+      "id": 5
     }
   ]
 }
